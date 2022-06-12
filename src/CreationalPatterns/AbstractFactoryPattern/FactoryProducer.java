@@ -6,6 +6,8 @@ public class FactoryProducer {
     public AbstractFactory getFactory(String s){
         if(s.equals(RoundedFact))
             return new RoundedShapeFactory();
+        else if( s.equalsIgnoreCase(NormalFact))
+            return new ShapeFactory();
         return null;
     }
 }

@@ -10,8 +10,10 @@ public class ShapreCache {
     }
     public static void loadCache() {
         Square square = new Square();
+        square.name = "Square1";
         mp.put(square.name,square);
         Rectangle rectangle = new Rectangle();
+        rectangle.name = "rectangle1";
         mp.put(rectangle.name, rectangle);
     }
 }
